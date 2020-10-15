@@ -5,9 +5,11 @@ Among Us packet parsing library and game engine
 Simple packet parsing example
 -----------------------------
 
-from amongUsParser import parse ## Load parser
-	tree = parse(b'\x01\x00\x61\x0b\x00\x05\x24\xe1\x36\x80\x04\x00\x02\xc2\x01\x0b\x08') ## Contents of packet
-	tree.pprint() ## Pretty print data
+from amongUsParser import parse ## Load parser	
+
+tree = parse(b'\x01\x00\x61\x0b\x00\x05\x24\xe1\x36\x80\x04\x00\x02\xc2\x01\x0b\x08') ## Contents of packet
+
+tree.pprint() ## Pretty print data
 
 read-pcap.py
 ------------
