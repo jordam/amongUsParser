@@ -1,0 +1,21 @@
+Spec 1
+	Playing as PcapPlayer
+	Map 1
+	Was not impostor
+	Meetings only held via dead body report
+	Lost
+
+Spec 2
+	Map 1
+	1 impostor
+	Was not impostor
+	Had both types of meetings
+	Said "??" in chat during 2nd meeting
+	Impostor left during 2nd meeting
+	Won
+
+Spec 3:
+	Map 2
+	2 impostor
+	Was impostor
+	Lost

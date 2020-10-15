@@ -1,1 +1,37 @@
-# amongUsParser
+Among Us packet parsing library and game engine
+
+*Simple packet parsing example*
+	from amongUsParser import parse ## Load parser
+	tree = parse(b'\x01\x00\x61\x0b\x00\x05\x24\xe1\x36\x80\x04\x00\x02\xc2\x01\x0b\x08') ## Contents of packet
+	tree.pprint() ## Pretty print data
+
+read-pcap.py shows an example of dumping out pcap files and displaying the data structures inside of the packets
+example game pcaps and resulting data structure dumps are included in the pcap folder
+
+read-live.py contains a basic example of reading live data using scapy, feeding it to the game engine, then using the callback system for simplified actions
+
+Look in my repo for the discord bot for a fully featured example
+
+
+List of game engine callbacks
+	Player updated
+		Exiled
+		Murdered
+		Murder
+		SetSkin
+		SetHat
+		SetPet
+		SetColor
+		Infected
+		Chat (contains 'message' param)
+		SetName
+
+	Game updated
+		Reset
+		StartGame
+		EndGame
+		JoinedGame
+		GameSettings
+		StartMeeting
+		EndMeeting
+
