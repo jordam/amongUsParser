@@ -10,7 +10,26 @@ from amongUsParser import parse ## Load parser
 tree = parse(b'\x01\x00\x61\x0b\x00\x05\x24\xe1\x36\x80\x04\x00\x02\xc2\x01\x0b\x08') ## Contents of packet
 
 tree.pprint() ## Pretty print data
+<blockquote>
+Output:
 
+    Hazil
+        Command Leaf
+        - ReliableData
+        -- seq : 97
+        InnerNet
+                Command Leaf
+                - GameData
+                -- gameId : 2151080228
+                GameData
+                        Command Leaf
+                        - RpcCall
+                        -- ownerId : 194
+                        RPC
+                                Command Leaf
+                                - ReportDeadBody
+                                -- playerId : 8
+</blockquote>
 read-pcap.py
 ------------
 read-pcap.py shows an example of dumping out pcap files and displaying the data structures inside of the packets
